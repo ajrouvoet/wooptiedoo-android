@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, WooptiedooActivity"
-    />
+    android:layout_height="match_parent"
+    android:weightSum="1" android:padding="10dp">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:layout_weight="1.08" android:weightSum="1">
+        <TextView
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:text="(roll)"
+        android:background="#52b6ff" android:textColor="#000000"
+        android:padding="8dp" android:textSize="20dp" android:layout_weight="0.16" android:id="@+id/outcome_text"
+        android:textAlignment="center"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="221dp">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROLL!"
+                    android:id="@+id/roll_btn" android:layout_gravity="center_horizontal" android:layout_weight="0.09"
+                    android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>
 
